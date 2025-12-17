@@ -2,21 +2,21 @@
   "manifest_version": 3,
   "name": "Payazzou - Steam Players",
   "version": "1.0",
+  "permissions": [],
+  "host_permissions": [
+    "https://api.steampowered.com/*"
+  ],
+  "background": {
+    "service_worker": "/background.js"
+  },
   "description": "Mirá cuántos giles están jugando Rocket League",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon32.png"
   },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": [],
-  "host_permissions": [
-    "https://api.steampowered.com/*"
-  ],
   "icons": {
     "16": "icon32.png",
-    "32": "icon32",
+    "32": "icon32.png",
     "48": "icon32.png",
     "128": "icon32.png"
   }
